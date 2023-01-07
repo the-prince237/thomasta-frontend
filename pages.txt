@@ -11,7 +11,7 @@
   - page d'une location
 - service de formation
 - service de soutien scholaire
-  - page de sélection de classe et matière
+  - page d'une leçon
 - service de magazine
 - boutique
   - page d'une annonce
@@ -21,3 +21,5 @@
   - page d'un lieu de loisir
 - sale de cérémonie
   - page d'une salle de cérémonie
+- compte 
+- page de finalisation de l'inscription
