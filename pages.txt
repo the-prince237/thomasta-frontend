@@ -1,0 +1,23 @@
+- accueil (incluant contact)
+- authentification
+  * connexion
+  * création de compte
+  * mot de passe oublié
+  * modification de mot de passe
+- réponse à la modification de mot de passe
+  * succès 
+  * échec
+- service d'hébergement
+  - page d'une location
+- service de formation
+- service de soutien scholaire
+  - page de sélection de classe et matière
+- service de magazine
+- boutique
+  - page d'une annonce
+- annuaire
+  - page de d'un professionnel
+- lieux de loisir
+  - page d'un lieu de loisir
+- sale de cérémonie
+  - page d'une salle de cérémonie
