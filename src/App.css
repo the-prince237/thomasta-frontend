@@ -1,0 +1,173 @@
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--font-primary);
+  background: #EFF5F5;
+}
+
+ul{
+  list-style-type: none;
+}
+
+button, .btn {
+  cursor: pointer;
+}
+
+.btn:hover{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button{
+  border: none;
+  background-color: unset;
+  font-family: inherit;
+}
+
+button:focus{
+  stroke-width: 0;
+  outline: none;
+}
+
+input, textarea{
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  background-color: unset;
+}
+
+input:hover, textarea:hover{
+  outline: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: unset;
+}
+
+/* route viewer styling */
+.route-view{
+  margin-top: 56px;
+}
+
+/* style for temporary header */
+.temp-header{
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.temp-header--container{
+  background-color: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 20px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid 0.5px rgba(0, 0, 0, 0.1)
+}
+
+.temp-header--container nav{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  max-width: 65%;
+  overflow: auto;
+}
+
+.temp-nav-link{
+  background-color: #2DB36F;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.temp-nav-link:hover{
+  transform: translate(3px, 3px);
+}
+
+.temp-button, .temp-header--container .btn{
+  background-color: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 5px;
+  border:solid 1px red;
+  color:  red;
+}
+
+.temp-button{
+  position: relative;
+  bottom: 20px;
+  background-color: rgba(45, 179, 111, 0.5);
+  border:solid 1px #2DB36F;
+  color:  white;
+  font-weight: bold;
+}
+
+/* style */
+.page > .body{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 40px 20px;
+  gap: 24px;
+}
+
+/* page containers next to side bar */
+/* most of the time made up of a header and a container-body */
+.page .body .container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box1{
+  background-color: white;
+  border-radius: 8px;
+  transition: 400ms;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 15px;
+}
+
+.box1:hover{
+  box-shadow: 5px 5px 10px #d7e7df;
+}
+
+/* sections, lists styles */
+.list{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.list .list--item{
+  width: calc(100%/3 - 28px);
+}
+
+/* conteneur dont les éléments sont centrés en ligne */
+.row-centered{
+  display: flex;
+  align-items: center;
+}
+
+.full-centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
