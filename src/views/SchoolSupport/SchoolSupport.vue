@@ -4,4 +4,4 @@
   </div>
 </template>
 
-<style src="./schoolSupport.css"></style>
+<style src="./SchoolSupport.css"></style>

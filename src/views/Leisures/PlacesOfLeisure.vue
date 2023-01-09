@@ -4,4 +4,4 @@
   </div>
 </template>
 
-<style src="./PlacesOfLeasure.css"></style>
+<style src="./PlacesOfLeisure.css"></style>

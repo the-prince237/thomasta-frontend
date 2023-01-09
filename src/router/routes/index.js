@@ -4,6 +4,12 @@ import accountRoutes from "./account";
 import authRoutes from "./auth";
 import billingRoutes from "./billing";
 import ceremonieRoutes from "./ceremonies";
+import leisuresRoutes from './leisures';
+import magazinesRoutes from './magazines';
+import schoolSupportRoutes from './schoolSupport';
+import settingsRoutes from './settings';
+import storeRoutes from './store';
+import trainingsRoutes from './trainings';
 
 const homeRoute = {
   path: "/",
@@ -17,7 +23,13 @@ const routes = [
   ...accountRoutes,
   ...authRoutes,
   ...billingRoutes,
-  ...ceremonieRoutes
+  ...ceremonieRoutes,
+  ...leisuresRoutes,
+  ...magazinesRoutes,
+  ...schoolSupportRoutes,
+  ...settingsRoutes,
+  ...storeRoutes,
+  ...trainingsRoutes
 ];
 
 export default routes

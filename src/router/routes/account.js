@@ -1,17 +1,13 @@
 import UserAccount from '@/views/Account/UserAccount.vue'
-import UserSettings from '@/views/Settings/UserSettings'
+
+const baseUrl = "/compte"
 
 const accountRoutes = [
   {
-    path: "/compte",
+    path: baseUrl,
     name: "account",
     component: UserAccount
   },
-  {
-    path: "/paramètres",
-    name: "settings",
-    component: UserSettings
-  }
 ]
 
 export default accountRoutes;
