@@ -2,14 +2,14 @@
   <div>
     <section>
       <h2>Hero section</h2>
-      <div>
+      <div class="row-centered">
         <div>
           <h3>Titre de la section</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi vero doloribus accusamus tempore nam veritatis, illo ducimus odit! Similique est doloribus illum. Aliquid praesentium delectus ullam nisi iure et rem.
           </p>
         </div>
-        <img src="#" alt="">
+        <img src="#" alt="hero-image">
       </div>
     </section>
     <section>
