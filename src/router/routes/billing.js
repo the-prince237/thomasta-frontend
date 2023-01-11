@@ -5,7 +5,7 @@ const baseUrl = "/facturation"
 const billingRoutes = [
   {
     path: baseUrl,
-    name: "facturation",
+    name: "billing",
     component: RegBilling
   }
 ]

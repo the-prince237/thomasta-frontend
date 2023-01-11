@@ -11,7 +11,7 @@
 
 <template>
   <div>
-    Accomodation id : {{ accId }}
+    Accomodation id
   </div>
 </template>
 
