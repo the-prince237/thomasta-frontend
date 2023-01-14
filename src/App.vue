@@ -13,11 +13,11 @@
 </script>
 
 <template>
-  <div class="temp-header">
-  <!-- cette barre de navigation est temporaire 
+  <!-- <div class="temp-header">
+  cette barre de navigation est temporaire 
     et permettra à l'équipe de visualiser 
     toutes les pages réalisées ou en cours de réalisation
-    ainsi que de naviguer entre elles -->
+    ainsi que de naviguer entre elles
     <div v-if="on" class="temp-header--container">
       <nav>
         <router-link
@@ -32,7 +32,7 @@
       <span class="btn" @click="on=false">Fermer</span>
     </div>
     <div class="temp-button btn" @click="on=true" v-else>Naviger</div>
-  </div>
+  </div> -->
   <router-view></router-view>
 </template>
 

@@ -13,22 +13,14 @@
 
 body{
   font-family: var(--font-primary);
-  background: #EFF5F5;
 }
 
 ul{
   list-style-type: none;
 }
 
-button, .btn {
-  cursor: pointer;
-}
-
-.btn:hover{
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
 button{
+  cursor: pointer;
   border: none;
   background-color: unset;
   font-family: inherit;
@@ -55,19 +47,12 @@ a{
   text-decoration: unset;
 }
 
-section{
-  padding: 30px 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* route viewer styling */
 .route-view{
   margin-top: 56px;
 }
 
-/* style for temporary header */
+/* style for temporary header 
 .temp-header{
   position: fixed;
   bottom: 0;
@@ -123,64 +108,98 @@ section{
   border:solid 1px #2DB36F;
   color:  white;
   font-weight: bold;
+}*/
+
+/* global style */
+h1{
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 78px;
+  /* identical to box height */
+  letter-spacing: 0.06em;
 }
 
-/* style */
-.page > .body{
+h2{
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.06em;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.06em;
+}
+
+.text1, .section-link{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #5F5E79;
+}
+
+.text2{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  color: #5F5E79;
+}
+
+.section-link{
+  color: white;
+  background-color: #3642DF;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.section-link:hover{
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+.blue-line,
+.blue-line-rev,
+.white-line{
+  width: 338px;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.blue-line{
+  background: linear-gradient(89.98deg, #05A5F5 0.01%, rgba(5, 165, 245, 0) 100%);
+}
+
+.blue-line-rev{
+  background: linear-gradient(270deg, #05A5F5 0%, rgba(5, 165, 245, 0) 100%);
+}
+
+.white-line{
+  background: linear-gradient(90deg, #FFFFFF 2.66%, rgba(255, 255, 255, 0) 100%);
+}
+
+.button{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  color: #3642DF;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px 40px 20px;
-  gap: 24px;
-}
-
-/* page containers next to side bar */
-/* most of the time made up of a header and a container-body */
-.page .body .container{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.box1{
-  background-color: white;
-  border-radius: 8px;
-  transition: 400ms;
-  min-width: 50px;
-  min-height: 50px;
-  padding: 15px;
-}
-
-.box1:hover{
-  box-shadow: 5px 5px 10px #d7e7df;
-}
-
-/* sections, lists styles */
-.list{
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.list .list--item{
-  width: calc(100%/3 - 28px);
-}
-
-/* conteneur dont les éléments sont centrés en ligne */
-.row-centered{
-  display: flex;
-  align-items: center;
-}
-
-.col-centered{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.full-centered{
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.activeButton{
+  background-color: #3642DF;
+  color: white;
+}
+
+.button:hover{
+  color: white;
+  background-color: #3642DF;
 }
