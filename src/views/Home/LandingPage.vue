@@ -32,24 +32,29 @@
         magazinesImg,
         aboutItems: [
           {
-            icon: accIcon,
-            text: "Hébergements",
+            icon: proIcon,
+            text: "Professionnels",
+            url: "pros"
           },
           {
-            icon: entIcon,
-            text: "Entertainments"
+            icon: accIcon,
+            text: "Hébergements",
+            url: "acc"
           },
           {
             icon: schIcon,
-            text: "Éducation"
+            text: "Éducation",
+            url: "education"
           },
           {
-            icon: proIcon,
-            text: "Professionnels"
+            icon: entIcon,
+            text: "Entertainments",
+            url: "ent"
           },
           {
             icon: ecomIcon,
-            text: "E-Commerce"
+            text: "E-Commerce",
+            url: "sellings"
           }
         ],
         actEducation: "support",
@@ -88,21 +93,22 @@
     </div>
     <section class="about" id="about">
       <h1>QUI SOMMES NOUS ?</h1>
-      <p class="text2">Nous sommes un réseau des professionnels et d’experts en  dépannage urgent en : informatique, mécanique, plomberie, électricité, bâtiment et travaux publics.</p>
+      <p class="text2">Nous sommes un réseaux de professionnels et d'experts dans les domaines techniques et informatiques, de l'éducation, de l'immobilier, de l'évennementiel et de l'e-commerce. Nous offrons nos services dans divers domaines.</p>
       <div class="about--items">
-        <div
-          v-for="({ icon, text }, index) in aboutItems"
+        <a
+          :href="'#'+url"
+          v-for="({ icon, text, url }, index) in aboutItems"
           :key="'about-item--'+index"
           class="about-item"
         >
           <img :src="icon" :alt="text" />
           <h3>{{ text }}</h3>
-        </div>
+        </a>
       </div>
     </section>
     <section id="services" class="services">
       <h1>NOS SERVICES</h1> 
-      <section class="services--item services--pros">
+      <section class="services--item services--pros" id="pros">
         <img :src="proImg" alt="pro-img" />
         <div class="service--content services--pros--content">
           <div class="blue-line-rev"></div>
@@ -112,7 +118,7 @@
           <a href="#" class="section-link">Voir les profils</a>
         </div>
       </section>
-      <section class="services--item services--item__rev services--acc">
+      <section class="services--item services--item__rev services--acc" id="acc">
         <div class="service--content services--acc--content">
           <div class="blue-line"></div>
           <h2>Hébergement</h2>
@@ -122,7 +128,7 @@
         </div>
         <img :src="accImg" alt="pro-img" />
       </section>
-      <section class="services--item services--education">
+      <section class="services--item services--education" id="education">
         <img v-if="actEducation==='training'" :src="trainingsImg" alt="education-img" />
         <img v-else :src="supportImg" alt="education-img" />
         <div class="service--content services--education--content">
@@ -159,7 +165,7 @@
         </div>
         <a href="#contact" class="section-link">CONTACTEZ NOUS</a>
       </section>
-      <section class="services--item services--ent">
+      <section class="services--item services--ent" id="ent">
         <img v-if="actEnt==='ceremonies'" :src="ceremoniesImg" alt="ceremonies-img" />
         <img v-else :src="leisuresImg" alt="leisures-img" />
         <div class="service--content services--ent--content">
@@ -191,7 +197,7 @@
       <div class="waves-wrapper">
         <img :src="waves1" alt="wave" class="back-waves" />
       </div>
-      <section class="services--item services--item__rev services--selling">
+      <section class="services--item services--item__rev services--selling" id="sellings">
         <div class="service--content services--acc--content">
           <div class="white-line"></div>
           <h2>E-Commerce & Magazines</h2>
