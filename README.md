@@ -1,4 +1,4 @@
-# thosmasta-frontend
+# thomasta-frontend
 
 ## Project setup
 ```
