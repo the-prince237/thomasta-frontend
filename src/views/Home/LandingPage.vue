@@ -220,7 +220,7 @@
           <p v-if="actSelling === 'ecommerce'" class="text1">Avez déjà approuvé des difficultés à trouver des clients, ou à LE produit donc vous avez besoin ?</p>
           <p v-else class="text1">Trouver de l'informations fiable, et de la lecture intéressante devient de plus en plus rare ?</p>
           <p v-if="actSelling === 'ecommerce'" class="text2">Sur Thomasta.com achetez et vendez vos produits sur internet au Cameroun, Gabon et dans le monde.</p>
-          <p v-else class="text2">Thosmasta.com oeuvre dans la mise en disposition pour tous des informatinos fiables à traves de magazines toujours plus intéressants.</p>
+          <p v-else class="text2">thomasta.com oeuvre dans la mise en disposition pour tous des informatinos fiables à traves de magazines toujours plus intéressants.</p>
           <a href="#" class="section-link">Consulter les offres</a>
         </div>
         <img v-if="actSelling==='ecommerce'" :src="ecomImg" alt="ecom-img" />
