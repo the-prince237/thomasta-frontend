@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -u github gh-pages
+git push -f github main:gh-pages
 cd -
