@@ -227,12 +227,20 @@ h1 + p{
   position: relative;
 }
 
+.landing-page section:last-child{
+  margin-bottom: 0;
+}
+
 .landing-page .contact{
-  background: url('../../assets/contactBg.svg');
+  background: url('../../assets/contactBg.svg') bottom no-repeat;
   padding: 150px 75px;
   color: white;
   display: flex;
   justify-content: space-between;
+  margin-top: -100;
+  border-radius: 140px 0 0 0;
+  box-shadow: -5px -5px 100px #3951E6;
+  position: relative;
 }
 
 .landing-page .contact p{
@@ -288,4 +296,5 @@ h1 + p{
   padding: 35px 0;
   background-color: #75F5AA;
   color: white;
+  position: relative;
 }
