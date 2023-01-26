@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:the-prince237/thomasta-frontend.git main:gh-pages
+git push -f github main:gh-pages
 cd -
