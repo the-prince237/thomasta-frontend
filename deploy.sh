@@ -5,9 +5,9 @@ set -e
 yarn run build
 
 # add, commit and push main branch
-git add -A
-git commit -m "update distant main branch"
-git push -u origin main
+# git add -A
+# git commit -m "update distant main branch"
+# git push -u origin main
 
 # navigate into the build output directory
 cd dist
