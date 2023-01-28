@@ -1,21 +1,30 @@
 #!/usr/bin/env sh
 # abort on errors
 set -e
+
+git add .
+
+if git diff-index --quiet HEAD --; 
+    then   echo WORK TREE VERY VERY CLEAN ":)"
+    else   echo commiting changes ... 
+            git commit -m "Deploy"
+            echo WORK TREE MORE THANT CLEAN ";)"
+fi
+
 # build
 yarn build
 
-# add, commit and push main branch
-git add -A
-git commit -m "update distant main branch"
-git push -u origin main
+# create and checkout to gh-pages branch
+git checkout --orphan gh-pages
 
-# navigate into the build output directory
-cd dist
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-git init
-git add -A
-git commit -m 'deploy'
-git branch -M main
-git push -f git@github.com:the-prince237/thomasta-frontend.git main:gh-pages
-cd -
+# navigate into the build output directory, add and commit changes
+git --work-tree dist add --all
+git --work-tree dist commit -m "Deploy"
+
+# push build 
+git push origin HEAD:gh-pages --force
+
+# remove build folder : dist and gh-pages branch
+# rm -r dist
+git checkout -f main
+git branch -D gh-pages
