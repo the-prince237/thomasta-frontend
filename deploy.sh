@@ -22,7 +22,7 @@ git --work-tree dist add --all
 git --work-tree dist commit -m "Deploy"
 
 # push build 
-git push origin HEAD:gh-pages --force
+git push github HEAD:gh-pages --force
 
 # remove build folder : dist and gh-pages branch
 # rm -r dist
