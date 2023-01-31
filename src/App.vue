@@ -69,7 +69,6 @@
 </script>
 
 <template>
-  
   <div class="landing-page">
     <div class="home-hero" id="hero">
       <img :src="heroBg" alt="hero-bg" class="home-hero--bg" />

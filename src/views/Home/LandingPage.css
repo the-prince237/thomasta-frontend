@@ -1,3 +1,8 @@
+.landing-page{
+  width: 100%;
+  overflow: hidden;
+}
+
 .landing-page .home-hero{
   width: 100%;
   min-height: 100vh;
